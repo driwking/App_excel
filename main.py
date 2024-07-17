@@ -3,15 +3,8 @@ import openpyxl as opx
 import xlsxwriter as xl
 import math
 
-# "arquivo": nome do aquivo excel que será lido
-# "novo": nome do arquivo excel a ser criado  
 config = {"arquivo":"rows0","novo":"modelo"}
-
-# lista de campos para entrarem no novo arquivo
 novasColunas = ["id","patente","valor"]
-
-# lista de campos a serem buscados novos valores, caso tenha espaços no campo do
-# arquivo importante coloca-lo junto, por enquanto.
 colunasDoArquivos = ["cargo","salario","nome"]
 
 def buscarColunas(cols,file):
